@@ -22,20 +22,24 @@ function App() {
       <table>
         <thead>
           <tr>
-            <th>First Name</th>
-            <th>Last name</th>
-            <th>Email</th>
-            <th>Role</th>
+            <th>Name</th>
+            <th>Code</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Offer Value</th>
+            <th>Discount</th>
             <th>Status</th>
           </tr>
         </thead>
         <tbody>{
           data.map((e)=>{
             return <tr key = {e._id}>
-            <td>{e.firstName}</td>
-            <td>{e.lastname}</td>
-            <td>{e.email}</td>
-            <td>{e.role}</td>
+            <td>{e.name}</td>
+            <td>{e.code}</td>
+            <td>{e.startDate}</td>
+            <td>{e.endDate}</td>
+            <td>{e.offerValue}</td>
+            <td>{e.discount}</td>
             <td>{e.status?"Active":"Inactive"}</td>
           </tr>
           })}
